@@ -1,6 +1,5 @@
 # playground
-
-A new Flutter project.
+Primeiro projeto feito em flutter
 
 ## Getting Started
 
