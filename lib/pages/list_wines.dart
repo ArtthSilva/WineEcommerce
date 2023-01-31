@@ -117,15 +117,24 @@ class ListWines extends StatelessWidget {
                 children: [
                   Container(
                       padding: EdgeInsets.only(top: 9),
-                      child: Text(' Viñas de Anna D.O.', style: TextStyle(fontWeight: FontWeight.w400))),
+                      child: Text(' Viñas de Anna D.O.',
+                          style: TextStyle(fontWeight: FontWeight.w400))),
                   Row(
                     children: [
                       Container(
-                        padding: EdgeInsets.only(right: 24,left: 13),
-                        child: Text('R\$ 146,99',
-                        style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),),
+                        padding: EdgeInsets.only(right: 24, left: 13),
+                        child: Text(
+                          'R\$ 146,99',
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.w700),
+                        ),
                       ),
-                      IconButton(onPressed: ( ){}, icon: Icon(Icons.add_circle_outlined,size: 25,))
+                      IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.add_circle_outlined,
+                            size: 25,
+                          ))
                     ],
                   ),
                 ],
@@ -168,15 +177,28 @@ class ListWines extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    padding: EdgeInsets.only(top: 5),
-                    //rosé
-                    child: Text('Gato Negro',style: TextStyle(fontWeight: FontWeight.w400,fontSize: 17 ),)),
+                      padding: EdgeInsets.only(top: 5),
+                      //rosé
+                      child: Text(
+                        'Gato Negro',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w400, fontSize: 17),
+                      )),
                   Row(
                     children: [
                       Container(
-                        padding: EdgeInsets.only(left: 13,right: 33),
-                        child: Text('R\$ 42,90',style: TextStyle(fontWeight: FontWeight.w700,fontSize: 18),)),
-                       IconButton(onPressed: (){}, icon: const Icon(Icons.add_circle_outlined,size: 25,))
+                          padding: EdgeInsets.only(left: 13, right: 33),
+                          child: Text(
+                            'R\$ 42,90',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w700, fontSize: 18),
+                          )),
+                      IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.add_circle_outlined,
+                            size: 25,
+                          ))
                     ],
                   ),
                 ],
@@ -219,15 +241,28 @@ class ListWines extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    padding: EdgeInsets.only(top: 5),
-                    //tinto
-                    child: Text('Pérgola Seleção',style: TextStyle(fontWeight: FontWeight.w400,fontSize: 15),)),
+                      padding: EdgeInsets.only(top: 5),
+                      //tinto
+                      child: Text(
+                        'Pérgola Seleção',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w400, fontSize: 15),
+                      )),
                   Row(
                     children: [
                       Container(
-                        padding: EdgeInsets.only(right: 37,left: 10),
-                        child: Text('R\$ 22,90',style: TextStyle(fontWeight: FontWeight.w700,fontSize: 18),)),
-                      IconButton(onPressed: () {}, icon: Icon(Icons.add_circle_outlined,size: 25,))
+                          padding: EdgeInsets.only(right: 37, left: 10),
+                          child: Text(
+                            'R\$ 22,90',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w700, fontSize: 18),
+                          )),
+                      IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.add_circle_outlined,
+                            size: 25,
+                          ))
                     ],
                   ),
                 ],
@@ -235,7 +270,7 @@ class ListWines extends StatelessWidget {
             ],
           ),
         ),
-         Container(
+        Container(
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               color: Colors.white,
