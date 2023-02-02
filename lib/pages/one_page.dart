@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:playground/pages/announcement_wine.dart';
 import 'package:playground/pages/list_wines.dart';
 import 'package:playground/pages/types_wine.dart';
@@ -19,7 +20,7 @@ class OnePage extends StatelessWidget {
                 children: [Row(
                   children: [
                     Container(child: Text('O que você gostaria?',
-                    style: TextStyle(fontSize: 20,fontWeight: FontWeight.w200),
+                    style: GoogleFonts.playfairDisplay(fontSize: 22,fontWeight: FontWeight.w100),
                     ),
                     padding: EdgeInsets.only(top: 50,left: 40),),
                   ],

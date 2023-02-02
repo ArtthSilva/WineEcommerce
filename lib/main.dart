@@ -19,6 +19,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
      theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.cyan)) ,
-      home:FirstIntroduction());
+      home:OnePage());
   }
 }
