@@ -31,7 +31,7 @@ class TypesWine extends StatelessWidget {
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
               primary: Colors.white,
-              shadowColor: Colors.white,
+              shadowColor: Color.fromARGB(255, 151, 151, 151),
             ),
               onPressed:() {
             }, child: Text('Espumante',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color:Color.fromARGB(255, 121, 120, 120)),)),
@@ -71,7 +71,7 @@ class TypesWine extends StatelessWidget {
             ),
               onPressed:() {
             }, child: Text('Rosé',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color:Color.fromARGB(255, 121, 120, 120)),)),
-          )
+          ),
         ],
       ),
     );

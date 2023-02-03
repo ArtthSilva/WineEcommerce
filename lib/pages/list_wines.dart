@@ -55,7 +55,7 @@ class ListWines extends StatelessWidget {
                 Row(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(right: 40, left: 18),
+                      padding: EdgeInsets.only(right: 30, left: 11),
                       child: Text(winesItems[index].price.toString(),
                       style: TextStyle(
                         fontWeight: FontWeight.w700,fontSize: 18),),
