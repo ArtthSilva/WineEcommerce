@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:playground/pages/wine_storage.dart';
+import 'package:playground/components/wine_storage.dart';
 
 class ListWines extends StatelessWidget {
   const ListWines({super.key});

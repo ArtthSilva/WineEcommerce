@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:playground/pages/list_wines.dart';
 import 'package:playground/pages/one_page.dart';
 
 class SecondIntroduction extends StatelessWidget {
