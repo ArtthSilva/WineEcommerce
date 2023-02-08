@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playground/components/wine_storage.dart';
 class TypesWine extends StatelessWidget {
   const TypesWine({super.key});
 
@@ -6,13 +7,15 @@ class TypesWine extends StatelessWidget {
     return Container(
         width: 133,
         height: 60,
-        padding: EdgeInsets.only(left: 10, top: 14),
+        padding: const EdgeInsets.only(left: 10, top: 14),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             primary: Colors.white,
             shadowColor: Colors.white,
           ),
-          onPressed: () {},
+          onPressed: () {
+           
+          },
           child: Text(
             text,
             style: const TextStyle(

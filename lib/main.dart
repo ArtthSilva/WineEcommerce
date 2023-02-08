@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:playground/pages/first_introduction.dart';
+import 'package:playground/components/drawer.dart';
+
 import 'package:playground/pages/one_page.dart';
 main() {
-  runApp(MyApp());
+ runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-            colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.cyan)),
-        home: FirstIntroduction());
+            colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.grey)),
+        home: DrawerTeste());
   }
 }

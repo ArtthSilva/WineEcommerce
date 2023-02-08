@@ -14,13 +14,12 @@ class ListWines extends StatelessWidget {
       childAspectRatio: 0.60),
       itemCount:  winesItems.length,
        itemBuilder: (context, index) {
-         return Container(
+         return  Container(
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               color: Colors.white,
-              // ignore: prefer_const_literals_to_create_immutables
               boxShadow: [
-                const BoxShadow(
+                   BoxShadow(
                     color: Color(0xFFe8e8e8),
                     blurRadius: 5,
                     offset: Offset(0, 5)
@@ -30,48 +29,49 @@ class ListWines extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    padding: EdgeInsets.only(left: 125),
+                    padding: const EdgeInsets.only(left: 125),
                     child: IconButton(
                       onPressed: (){},
                       iconSize: 20,
-                     icon: Icon(Icons.favorite_outline)),
+                     icon: const Icon(Icons.favorite_outline)),
                   ),
                   Container(
-                    padding: EdgeInsets.only(left: 10),
-                     
-                    child:Image.network(winesItems[index].image)
-                     
+                    padding:const EdgeInsets.only(left: 10),
+                    child:Image.network(winesItems[index].image)                   
                   ),
                    Column(
                 children: [
                   Container(
-                      padding: EdgeInsets.only(top: 9),
+                      padding: const EdgeInsets.only(top: 9),
                       child:
                           Text(
                           winesItems[index].name,
-                        style: TextStyle(fontWeight: FontWeight.w400),
+                        style: const TextStyle(fontWeight: FontWeight.w400),
                       ))
                 ]),
                 Row(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(right: 30, left: 11),
+                      padding: const EdgeInsets.only(right: 30, left: 11),
                       child: Text(winesItems[index].price.toString(),
-                      style: TextStyle(
+                      style:const TextStyle(
                         fontWeight: FontWeight.w700,fontSize: 18),),
                     ),
                     Container(
-                      padding: EdgeInsets.only(),
+                      padding:const  EdgeInsets.only(),
                       child: IconButton(onPressed: (){}, 
-                      icon: Icon(Icons.add_circle_outlined,
+                      icon: const Icon(Icons.add_circle_outlined,
                       size: 25,) ),
                     )
                   ],
-                )
+                ),
+                 
                 ],
               ),
+              
                     );
        }, 
     );
+    
   }
 }

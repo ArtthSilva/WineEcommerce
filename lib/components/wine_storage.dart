@@ -50,3 +50,4 @@ List<Wines> filtrar(String tipo) {
     return winesItems.where((element) => element.type == tipo).toList();
   }
 }
+ 
