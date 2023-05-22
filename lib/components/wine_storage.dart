@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 
 class Wines {
   String name;
@@ -6,6 +5,13 @@ class Wines {
   var price;
   String type;
   Wines.items(this.image, this.name, this.price, this.type);
+  Wines({
+    required this.name,
+    required this.image,
+    required this.price,
+    required this.type
+
+  });
 }
 
 List<Wines> winesItems = [

@@ -12,9 +12,10 @@ class TypesWine extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             primary: Colors.white,
             shadowColor: Colors.white,
+            
           ),
           onPressed: () {
-           
+            
           },
           child: Text(
             text,
