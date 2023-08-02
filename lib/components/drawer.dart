@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
 import 'package:playground/pages/configuration_page.dart';
 import 'package:playground/pages/favorite_page.dart';
@@ -17,7 +15,7 @@ class DrawerTeste extends StatefulWidget {
 class _DrawerState extends State<DrawerTeste> {
   List<ScreenHiddenDrawer> _pages = [];
 
-  final MeuEstiloTexto = TextStyle(fontWeight: FontWeight.bold,fontSize: 18,  color: Colors.white);
+  final MeuEstiloTexto = const TextStyle(fontWeight: FontWeight.bold,fontSize: 18,  color: Colors.white);
 
 
   @override
@@ -28,19 +26,19 @@ class _DrawerState extends State<DrawerTeste> {
       ScreenHiddenDrawer(ItemHiddenMenu(
         name: 'Inicio', 
         baseStyle: MeuEstiloTexto, 
-        selectedStyle: MeuEstiloTexto), OnePage()),
+        selectedStyle: MeuEstiloTexto), const OnePage()),
         ScreenHiddenDrawer(ItemHiddenMenu(
         name: 'Configurações', 
         baseStyle: MeuEstiloTexto, 
-        selectedStyle: MeuEstiloTexto), ConfigurationPage()),
+        selectedStyle: MeuEstiloTexto), const ConfigurationPage()),
         ScreenHiddenDrawer(ItemHiddenMenu(
         name: 'Favoritos', 
         baseStyle: MeuEstiloTexto, 
-        selectedStyle: MeuEstiloTexto), FavoritePage()),
+        selectedStyle: MeuEstiloTexto), const FavoritePage()),
         ScreenHiddenDrawer(ItemHiddenMenu(
         name: 'Perfil', 
         baseStyle: MeuEstiloTexto, 
-        selectedStyle: MeuEstiloTexto), ProfilePage()),
+        selectedStyle: MeuEstiloTexto), const ProfilePage()),
     ];
 
   }
@@ -50,12 +48,12 @@ class _DrawerState extends State<DrawerTeste> {
   Widget build(BuildContext context) {
     return HiddenDrawerMenu(
        
-      styleAutoTittleName: TextStyle(color: Colors.white),
+      styleAutoTittleName: const TextStyle(color: Colors.white),
       isTitleCentered: true,
-      backgroundColorMenu: Color.fromARGB(255, 155, 18, 8) ,
+      backgroundColorMenu: const Color.fromARGB(255, 155, 18, 8) ,
       screens: _pages,
       initPositionSelected: 0,
-      backgroundColorAppBar: Color.fromARGB(255, 251, 17, 0), 
+      backgroundColorAppBar: const Color.fromARGB(255, 251, 17, 0), 
     );
   }
 }

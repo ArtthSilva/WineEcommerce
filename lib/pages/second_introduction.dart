@@ -12,11 +12,11 @@ class SecondIntroduction extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.only(left: 30, top: 160, right: 30),
+            padding: const EdgeInsets.only(left: 30, top: 160, right: 30),
             child: Image.asset('assets/images/Tasting-bro.png'),
           ),
           Container(
-            padding: EdgeInsets.only(top: 15, bottom: 20),
+            padding: const EdgeInsets.only(top: 15, bottom: 20),
             child: Text(
               'Bem vindo ao mundo do vinho',
               style: GoogleFonts.roboto(
@@ -26,7 +26,7 @@ class SecondIntroduction extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(right: 15),
+            padding: const EdgeInsets.only(right: 15),
             child: Text(
               'Aqui você escolhe a bebida ',
               style: GoogleFonts.playfairDisplay(
@@ -34,7 +34,7 @@ class SecondIntroduction extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(right: 50),
+            padding: const EdgeInsets.only(right: 50),
             child: Text(
               'que se encaixa em todos',
               style: GoogleFonts.playfairDisplay(
@@ -42,7 +42,7 @@ class SecondIntroduction extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(right: 135),
+            padding: const EdgeInsets.only(right: 135),
             child: Text(
               'os seus critérios',
               style: GoogleFonts.playfairDisplay(
@@ -52,20 +52,20 @@ class SecondIntroduction extends StatelessWidget {
           Container(
               width: 360,
               height: 150,
-              padding: EdgeInsets.only(top: 82, left: 210, bottom: 10),
+              padding: const EdgeInsets.only(top: 82, left: 210, bottom: 10),
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
                       context, PageTransition(child: const OnePage(),
                       type: PageTransitionType.bottomToTop));
                 },
-                child: Text('Próximo',
-                    style: GoogleFonts.roboto(color: Colors.white)),
                 style: ElevatedButton.styleFrom(
                     fixedSize: const Size(300, 100),
-                    backgroundColor: Color.fromARGB(231, 192, 16, 3),
+                    backgroundColor: const Color.fromARGB(231, 192, 16, 3),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15))),
+                child: Text('Próximo',
+                    style: GoogleFonts.roboto(color: Colors.white)),
               )),
         ],
       ),

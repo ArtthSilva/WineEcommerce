@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+ 
 
 class ConfigurationPage extends StatelessWidget {
   const ConfigurationPage({super.key});
@@ -10,21 +9,21 @@ class ConfigurationPage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           ListTile(
-            title: Text('Gerenciar notificações',style:TextStyle(fontSize: 18),),
-            trailing: IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios_rounded)),
+            title: const Text('Gerenciar notificações',style:TextStyle(fontSize: 18),),
+            trailing: IconButton(onPressed: (){}, icon: const Icon(Icons.arrow_forward_ios_rounded)),
           ),
           ListTile(
-            title: Text('Sobre essa versão',style:TextStyle(fontSize: 18),),
-            trailing: IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios_rounded)),
+            title: const Text('Sobre essa versão',style:TextStyle(fontSize: 18),),
+            trailing: IconButton(onPressed: (){}, icon: const Icon(Icons.arrow_forward_ios_rounded)),
           ),
-          ListTile(
+          const ListTile(
             title: Text('Limpar histórico',style:TextStyle(fontSize: 18),),
           ),
-          ListTile(
+          const ListTile(
             title: Text('Sair',style:TextStyle(fontSize: 18),),
           )
         ],

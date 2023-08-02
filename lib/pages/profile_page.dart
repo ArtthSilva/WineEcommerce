@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+ 
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -21,55 +20,55 @@ class ProfilePage extends StatelessWidget {
                 ),
                 child: Image.asset('assets/images/Tasting-bro.png'),
               ),
-              Text('Arthur lindao',style: TextStyle(fontSize: 18),),
+              const Text('Arthur lindao',style: TextStyle(fontSize: 18),),
               Container(
-                padding: EdgeInsets.only(left: 110,bottom: 60),
-                child: IconButton(onPressed: (){}, icon: Icon(Icons.qr_code_scanner_rounded)),
+                padding: const EdgeInsets.only(left: 110,bottom: 60),
+                child: IconButton(onPressed: (){}, icon: const Icon(Icons.qr_code_scanner_rounded)),
               )
             ],
           ),
           ListTile(
-            leading: Icon(Icons.chat),
+            leading: const Icon(Icons.chat),
             iconColor: Colors.grey,
-            title: Text('Chats'),
-            subtitle: Text('Minhas conversas',style: TextStyle(color: Colors.grey)), 
-             trailing: Icon(Icons.arrow_forward_ios),
+            title: const Text('Chats'),
+            subtitle: const Text('Minhas conversas',style: TextStyle(color: Colors.grey)), 
+             trailing: const Icon(Icons.arrow_forward_ios),
                 onTap: () {
                 }         
           ),
            ListTile(
-            leading: Icon(Icons.notifications_active),
+            leading: const Icon(Icons.notifications_active),
             iconColor: Colors.grey,
-            title: Text('Notificações '),
-            subtitle: Text('Minha central de notificações ',style: TextStyle(color: Colors.grey)), 
-             trailing: Icon(Icons.arrow_forward_ios),
+            title: const Text('Notificações '),
+            subtitle: const Text('Minha central de notificações ',style: TextStyle(color: Colors.grey)), 
+             trailing: const Icon(Icons.arrow_forward_ios),
                 onTap: () {
                 }         
           ),
            ListTile(
-            leading: Icon(Icons.credit_card),
+            leading: const Icon(Icons.credit_card),
             iconColor: Colors.grey,
-            title: Text('Pagamentos'),
-            subtitle: Text('Meus saldos e cartões',style: TextStyle(color: Colors.grey)), 
-             trailing: Icon(Icons.arrow_forward_ios),
+            title: const Text('Pagamentos'),
+            subtitle: const Text('Meus saldos e cartões',style: TextStyle(color: Colors.grey)), 
+             trailing: const Icon(Icons.arrow_forward_ios),
                 onTap: () {
                 }         
           ),
            ListTile(
-            leading: Icon(Icons.wallet_giftcard),
+            leading: const Icon(Icons.wallet_giftcard),
             iconColor: Colors.grey,
-            title: Text('Cupons'),
-            subtitle: Text('Minhas conversas',style: TextStyle(color: Colors.grey),), 
-             trailing: Icon(Icons.arrow_forward_ios),
+            title: const Text('Cupons'),
+            subtitle: const Text('Minhas conversas',style: TextStyle(color: Colors.grey),), 
+             trailing: const Icon(Icons.arrow_forward_ios),
                 onTap: () {
                 }         
           ),
            ListTile(
-            leading: Icon(Icons.location_on),
+            leading: const Icon(Icons.location_on),
             iconColor: Colors.grey,
-            title: Text('Endereços'),
-            subtitle: Text('Meus endereços de entrega',style: TextStyle(color: Colors.grey)), 
-             trailing: Icon(Icons.arrow_forward_ios),
+            title: const Text('Endereços'),
+            subtitle: const Text('Meus endereços de entrega',style: TextStyle(color: Colors.grey)), 
+             trailing: const Icon(Icons.arrow_forward_ios),
                 onTap: () {
                 }         
           ),      

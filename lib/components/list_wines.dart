@@ -1,9 +1,23 @@
 
 import 'package:flutter/material.dart';
 import 'package:playground/components/wine_storage.dart';
+class ListWines extends StatefulWidget {
+  const ListWines({super.key, required List<Wines> wines});
 
-class ListWines extends StatelessWidget {
-  const ListWines({super.key});
+  @override
+  State<ListWines> createState() => _ListWinesState();
+}
+
+class _ListWinesState extends State<ListWines> {
+  String _selectedType = '';
+
+  @override
+  void initState() {
+    super.initState();
+
+    // Inicializa a variável de estado com o tipo de vinho selecionado.
+    _selectedType = winesItems[0].type;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -12,13 +26,13 @@ class ListWines extends StatelessWidget {
       crossAxisSpacing: 14,
       mainAxisSpacing: 12,
       childAspectRatio: 0.60),
-      itemCount:  winesItems.length,
+      itemCount:  winesItems.length ,
        itemBuilder: (context, index) {
          return  Container(
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               color: Colors.white,
-              boxShadow: [
+              boxShadow: const [
                    BoxShadow(
                     color: Color(0xFFe8e8e8),
                     blurRadius: 5,
@@ -73,5 +87,12 @@ class ListWines extends StatelessWidget {
        }, 
     );
     
+  }
+
+  void _onTypeSelected(String type) {
+    // Atualiza a variável de estado com o tipo de vinho selecionado.
+    setState(() {
+      _selectedType = type;
+    });
   }
 }

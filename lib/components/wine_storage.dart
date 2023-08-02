@@ -16,17 +16,17 @@ class Wines {
 
 List<Wines> winesItems = [
   Wines.items(
-      'https://static-content.fastchannel.com/interfood/images/products/vinho-obikwa-chenin-blanc-2019-750mlv2_l_00.jpg',
+      'https://http2.mlstatic.com/D_NQ_NP_693719-MLU47591684989_092021-O.webp',
       'Obikwa Chenin Blanc ',
       'R\$126,99',
       'Branco'),
   Wines.items(
-      'https://static-content.fastchannel.com/interfood/images/products/vinas-de-anna-blanco_l_00.jpg',
+      'https://taafrl.vtexassets.com/arquivos/ids/158598-800-auto?v=637638776793670000&width=800&height=auto&aspect=true',
       ' Viñas de Anna D.O.',
       'R\$146,99',
       'Branco'),
   Wines.items(
-      'https://static-content.fastchannel.com/interfood/images/products/vinho-gato-negro-rose_d_00.jpg',
+      'https://giassi.vtexassets.com/arquivos/ids/544603/Vinho-Chileno-Tinto-Meio-Seco-San-Pedro-Gato-Negro-Cabernet-Sauvignon-Valle-Central-Garrafa-750ml.png?v=638053478591900000',
       'Gato Negro',
       'R\$142,99',
       'Rosé'),
@@ -36,7 +36,7 @@ List<Wines> winesItems = [
       'R\$122,99',
       'Tinto'),
   Wines.items(
-      'https://static-content.fastchannel.com/interfood/images/products/taittinger-nocturne_d_00.jpg',
+      'https://taafrl.vtexassets.com/arquivos/ids/159194/taittinger-nocturne.jpg?v=637739621902330000',
       'Taittinger Nocturne Sec',
       'R\$126,99',
       'Espumante'),
@@ -47,13 +47,3 @@ List<Wines> winesItems = [
       'Licor')
 ];
 
-List<String> filtbranco = winesItems.map((branco) => branco.type).toList();
-
-List<Wines> filtrar(String tipo) {
-  if (tipo == null) {
-    return winesItems;
-  } else {
-    return winesItems.where((element) => element.type == tipo).toList();
-  }
-}
- 
